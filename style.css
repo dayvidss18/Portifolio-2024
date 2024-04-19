@@ -190,7 +190,7 @@ body{
     row-gap: 2px;
 }
 .container_3_conteudo1:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 .container_3_conteudo2{
@@ -203,7 +203,7 @@ body{
     row-gap: 2px;
 }
 .container_3_conteudo2:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 .container_3_conteudo3{
@@ -216,7 +216,7 @@ body{
     row-gap: 2px;
 }
 .container_3_conteudo3:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: 0.5s;
 }
 @media only screen and (max-width: 480px) {
