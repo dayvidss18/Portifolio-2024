@@ -10,7 +10,7 @@ html{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     top: 0;
     left: 0;
     background-color: #39ff14;
@@ -20,6 +20,11 @@ header{
     z-index: 100;
     padding: 20px 5%;
 
+}
+@media only screen and (max-width: 768px) {
+    header{
+        justify-content: center;
+    }
 }
 .logo{
     font-size: 34px;
@@ -41,14 +46,45 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 3.125rem;
     height: 100vh;
 }
+@media only screen and (max-width: 768px) {
+    .container_principal{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container_principal_conteudo{
+        max-width: 50rem;
+    }
+}
+
 .img_container{
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
     
+}
+@media only screen and (max-width: 625px){
+    .img_container{
+        width: 180px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .img_container{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 965px){
+    .img_container{
+        width: 250px;
+        height: 250px;
+    }
 }
 .img_container:hover{
     transform: scale(1.2);
@@ -70,9 +106,19 @@ body{
 .sociais button{
     padding: 10px;
     gap: 10px;
-    margin: 20px 20px 20px 0px;
+    margin: 10px 20px;
     font-size: 24px;
-    gap: 100px;
+    gap: 5.25rem;
+}
+@media only screen and (max-width: 625px){
+    .sociais button{
+        font-size: 18px;
+        gap: 1rem;
+    }
+    .sociais button img{
+        width: 18px;
+        height: 18px;
+    }
 }
 .sociais a{
     margin-left: 10px;
@@ -94,16 +140,23 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .sobre_mim{
     font-size: 24px;
     font-weight: 800;
     padding:20px;
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 20px 0;
     align-items: center;
-    gap: 100px;
+    gap: 3.5rem;
+    
 
+}
+@media only screen and (max-width: 1440px){
+    .sobre_mim{
+        flex-direction: column-reverse;
+    }
 }
 .sobre_mim h1{
     font-size: 44px;
@@ -121,18 +174,95 @@ body{
 .sobre_mim img{
     align-items: center;
 }
+@media only screen and (max-width: 600px){
+    .sobre_mim img{
+        width: 180px;
+        height: 220px;
+    }
+    .sobre_mim p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sobre_mim h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .sobre_mim img{
+        width: 250px;
+        height: 320px;
+    }
+    .sobre_mim p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sobre_mim h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1024px){
+    
+    .sobre_mim img{
+        width: 250px;
+        height: 320px;
+    }
+    .sobre_mim p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sobre_mim h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .sobre_mim img{
+        width: 250px;
+        height: 320px;
+    }
+    .sobre_mim p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .sobre_mim h1{
+        text-align: center;
+    }
+}
+
 .conteudo_sobre_mim{
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 600px;
 }
-.linguagens{
-    padding-top: 20px;
-}
+
 .linguagens img{
     margin: 10px;
 }
+@media only screen and (max-width: 768px){
+    .linguagens img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .linguagens img{
+        width: 40px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .linguagens img{
+        width: 40px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 2560px){
+    .linguagens img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
 .linguagens img:hover{
     transform: scale(1.1);
     transition: 0.3s;
@@ -153,7 +283,6 @@ body{
 }
 .container_3{
     height: 100vh;
-    display: flex;
     justify-content: space-between;
 }
 .container_3 h1{
@@ -165,11 +294,30 @@ body{
     text-align: center;
 }
 .projetos{
-    display: flex;
-    justify-content: space-between;
-    gap: 150px;
     margin: 30px;
     align-items: center;
+    gap: 1rem;
+}
+@media only screen and (max-width: 2560px){
+    .projetos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .projetos{
+        display: grid;
+    }
+}
+@media only screen and (max-width: 768px){
+    .projetos{
+        display: grid;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .projetos{
+        display: grid;
+    }
 }
 .projetos h1{
     margin-bottom: 50px;
@@ -187,7 +335,10 @@ body{
     border-style: solid;
     border-color: #39ff14;
     padding: 25px;
+    max-width: 600px;
     row-gap: 2px;
+    text-align: center;
+    align-items: center;
 }
 .container_3_conteudo1:hover{
     transform: scale(0.9);
@@ -201,6 +352,8 @@ body{
     padding: 25px;
     max-width: 600px;
     row-gap: 2px;
+    text-align: center;
+    align-items: center;
 }
 .container_3_conteudo2:hover{
     transform: scale(0.9);
@@ -214,68 +367,10 @@ body{
     max-width: 600px;
     padding: 25px;
     row-gap: 2px;
+    text-align: center;
+    align-items: center;
 }
 .container_3_conteudo3:hover{
     transform: scale(0.9);
     transition: 0.5s;
-}
-@media only screen and (max-width: 480px) {
-    .logo {
-        font-size: 20px;
-    }
-
-    .barra a {
-        font-size: 18px;
-        margin-left: 10px;
-    }
-
-    .container_principal {
-        padding-top: 60px;
-    }
-
-    .container_principal_conteudo p {
-        font-size: 28px;
-    }
-
-    .container_principal_conteudo_titulo {
-        font-size: 36px;
-    }
-
-    .sociais button {
-        font-size: 18px;
-    }
-
-    .sobre_mim h1 {
-        font-size: 28px;
-    }
-
-    .sobre_mim p {
-        font-size: 20px;
-    }
-
-    .linguagens img {
-        margin: 5px;
-    }
-
-    .projetos h1 {
-        font-size: 28px;
-    }
-
-    .projetos p {
-        font-size: 20px;
-    }
-
-    .container_3 h1 {
-        font-size: 36px;
-    }
-
-    .container_3 p {
-        font-size: 20px;
-    }
-
-    .container_3_conteudo1,
-    .container_3_conteudo2,
-    .container_3_conteudo3 {
-        padding: 15px;
-    }
 }
