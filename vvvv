@@ -1,0 +1,40 @@
+@media only screen and (max-width: 2560px){
+        .minha_img{
+        width: 650px;
+        height: 780px;
+        margin-left: 20rem; 
+    }
+    .conteudo_sobre_mim{
+        padding: 3rem;
+    }
+    .sobre_mim h1{
+        font-size: 64px;
+        margin-left: 2rem;
+    }
+    .sobre_mim p{
+        font-size: 44px;
+        margin: 2rem;
+        width: 50rem;   
+    }
+    .projetos{
+        display: grid;
+        grid-template-columns: 600px 600px 600px 600px;
+        gap: 2rem;
+        justify-content: center;
+        height: 900px;
+        align-items:baseline
+    }
+    .projetos h1{
+        font-size: 48px;
+    }
+    .projetos p{
+        font-size: 34px;
+    }
+    #container_2{
+        max-width: 100vh;
+    }
+    .linguagens img{
+        width: 60px;
+        height: 60px;
+    }
+}
